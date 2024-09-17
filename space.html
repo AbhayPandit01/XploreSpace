@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Orbitron', 'Space+Grotesk';
+
+        }
+        body{
+          /* background: url(https://wallpapercave.com/wp/wp14363079.jpg); */
+          /* background: url(https://i.pinimg.com/originals/7a/b9/ba/7ab9baee24e279b28968dbf2a4ccd547.gif);  */
+          /* background: url(https://i.pinimg.com/originals/6a/ee/98/6aee98d30cec8b092e52f8f416fb58c6.gif); */
+          /* background: url(https://www.bing.com/th/id/OGC.8b168943a1079b2884b9ee10c1e19fb6?pid=1.7&rurl=https%3a%2f%2fi.makeagif.com%2fmedia%2f4-19-2016%2fh9RyHW.gif&ehk=K%2b0jG9ErjJga9mZyvfVVVocqe53lsYnyxhfKD5XY0%2b4%3d); */
+          /* background: url(https://th.bing.com/th/id/R.ce6bf24031d44c14c4b57a7ec677c28e?rik=3Ix%2fqzynUcaDxA&riu=http%3a%2f%2fcdn.iwastesomuchtime.com%2f2282013232750iAtC2afkODS6U.gif&ehk=ZvZwrF7nPlSUfvd%2fQlpd%2fLzfloBugQLIprPEzI0Dh0c%3d&risl=1&pid=ImgRaw&r=0); */
+          /* background: url(https://i.ytimg.com/vi/HK83PoctTcQ/maxresdefault.jpg) */
+          background: url(https://i.pinimg.com/originals/e6/22/3a/e6223ab875b7cb0588df8492d6d44d16.gif);
+          background-size: cover;
+          background-attachment: fixed;
+          background-position: center;
+          
+        }
+        .my{
+            position: absolute;
+
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: #fff;
+            font-size:50px;
+            animation: opmy 1s none;
+            
+           
+
+        }
+        .space{
+            position: absolute;
+
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: rgb(221, 9, 133);
+            font-size:80px;
+            animation: opspace 1s none ;
+            /* padding: 20px; */
+            
+
+        }
+        @keyframes opmy {
+            0%{
+                opacity: 0;
+            }100%{
+                opacity: 1;
+            }
+            
+        }
+        @keyframes opspace {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }100%{
+                opacity: 1;
+            } }
+            @keyframes opbutton {
+            0%{
+                opacity: 0;
+            }
+            70%{
+                opacity: 0;
+            }100%{
+                opacity: 1;
+            }
+        }
+        
+        
+        button{
+            height: 30px;
+            width: 80px;
+            color: #fff;
+            background-color: grey;
+            border: 2px solid black;
+            border-radius: 20px;
+            text-shadow:0 0 10px black ;
+            
+
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: silver;
+            transform: scale(1.1);
+            
+
+        }
+        button:active{
+            transform: scale(0.92);
+        }
+        footer{
+            position:fixed;
+            bottom: 30px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:center ;
+            align-items: baseline;
+            /* row-gap: 50px; */
+            
+
+            
+        }
+        @media screen and  (orientation: portrait){
+            .my,.space{
+                width: 50%;
+                font-size:50px;
+                position: absolute;
+                left :40%;
+            }
+        }
+        
+         </style>
+    <title>Space</title>
+</head>
+<body>
+    <header> <h1 class="my">Explore Your Planets</h1><br><br>
+        <h1 class="space"></h1>
+    </header>
+     
+    <footer> 
+        <a href="Sun.html"><button type="button">SUN</button></a>
+        <a href="Mercury.html"><button >MERCURY </button></a>
+        <a href="Venus.html"><button>VENUS </button></a>
+        <a href="Earth.html"><button>EARTH </button></a>
+        <a href="Moon.html"><button>MOON </button></a>
+        <a href="Mars.html"><button>MARS </button></a>
+        <a href="jupiter.html"><button>JUPITER </button></a>
+        <a href="Saturn.html"><button>SATURN </button></a>
+        <a href="Uranus.html"><button>URANUS</button></a>
+        <a href="Neptune.html"><button>NEPTUNE </button></a>
+        <a href="Pluto.html"><button>PLUTO </button></a>
+        
+    </footer>
+
+</body>
+</html>
